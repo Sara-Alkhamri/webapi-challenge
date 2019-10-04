@@ -11,7 +11,7 @@ server.use(express.json())
 server.use(logger);
 
 //server.use('api', router)
-server.use('api/projects', projectRouter);
+server.use('/api/projects', projectRouter);
 
 function logger(req, res, next) {
     console.log(req.method, req.url, Date.now())
